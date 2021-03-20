@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../fonts/css/all.html">
+        <style>
+            dt good{
+                width: 100px;
+                height: 20px;
+                background-color: green;
+                color: white; border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>user ratings</legend>
+            <dl>
+                <dt class="dt good">4.6<span class="fa-fa-star"></span></dt>
+                <dd>
+                    <meter min="1" max="10000" value="5000"></meter>
+                    (5000/10000)users
+                </dd>
+                <dt class="dt average">4.2<span calss="fafa-star"></span></dt>
+                <dd>
+                    <meter min="1" max="10000" value="2000" ></meter>
+                    (2000/10000)users
+                </dd>
+                <dt class="dt poor">3.8<span class="fafa-star"></span></dt>
+                <dd>
+                    <meter min="1" max="10000" value="500"></meter>
+                    (500/10000)users
+                </dd>
+                <dt>3.0</dt>
+                <dd>
+                <meter min="1" max="10000" value="400"></meter>
+                (400/10000)users
+                </dd>
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>user rating</legend>
+            <dl>
+                <dt>good</dt>
+                <dd>
+                    <meter min="1" max="100" value="100" low="0" high="0"></meter>
+                </dd>
+                <dt>average</dt>
+                <dd>
+                    <meter min="1" max="100" value="100" low="40" high="80"></meter>
+                </dd>
+                <dt>poor</dt>
+                <dd>
+                    <meter min="1" max="100" value="100" low="60" high="80"></meter>
+                </dd>
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>downloding progress</legend>
+            <dl>
+                <dt>preparind for downloding</dt>
+                <dd><progress></progress></dd>
+                <dt>downloding 40% complete</dt>
+                <dd><progress min="1" max="100" value="40"></progress></dd>
+                <dt>downloding 80% complete</dt>
+                <dd>
+                    <progress min="1" max="100" value="80"></progress>
+                </dd>
+                <dt>downloding complete</dt>
+                <dd>
+                    <progress min="1" max="100" value="100"></progress>
+                </dd>
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>your comment</legend>
+            <textarea disabled rows="4" cols="40" adjustment>A paragraphA paroup ofA paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument. sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument. idea. Paragraphs add one idea at a time to your broader argument.related sentences developing a central idea, ca.</textarea>
+            <h4>terms of services</h4>
+        </fieldset>
+    </body>
+</html>

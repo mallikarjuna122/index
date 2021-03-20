@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head><title>pattren</title>
+        <style>
+            fieldset{
+                width: 200px;
+                margin: auto;
+                padding: 20px;
+                border:2px solid darkgoldenrod;
+                }
+                legend{
+                    background: red;
+                    color: yellow;
+                }
+                button{
+                    background-color: tomato;
+                    color: whitesmoke;
+                }
+        </style>
+    </head>
+    <body>
+        <div align="center">
+            <fieldset>
+                <legend>pattern</legend>
+       <form>
+            <dl>
+                <dt>type color/colour</dt>
+                <dd><input pattern="colou?r" type="text" name="txt"></dd>
+                <dt>name(block letters)</dt>
+                <dd><input pattern="[A-Z]{4,15}" type="text" name="txt name" placeholder="4to15 chars only"></dd>
+                <dt>mobile</dt>
+                <dd><input pattern="\+91[0-9]{10}" type="text" name="text mobile" placeholder="+91[10 digits]"></dd>
+                <dt>password</dt>
+                <dd><input pattern="(?=.*[A-Z])\w{4,15}" type="password" name="text pwd" placeholder="4 to 15 chars at least 1 upper case letter"></dd>
+            </dl>
+            <button>submit</button>
+        </form>
+        </fieldset>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>payments</title>
+        <style>
+            fieldset{
+                width: 700px;
+                margin: auto;
+                padding: 20px;
+                border: 2px solid darkcyan;
+                color: white;
+            }
+            legend{
+                background-color: darkgreen;
+                color:red;
+            }
+            input:read-only{
+                background-color: lightgoldenrodyellow;
+                cursor:not-allowed;
+            }
+            input:disabled{
+                background-color: lightgray;
+                cursor: not-allowed;
+            }
+            input:required{
+                background-color: rgb(228, 118, 23);
+            }
+            input:autofocus{
+                background-color: salmon;
+            }
+        </style>
+    </head>
+    <body>
+        <table width=200px>
+        <fome>
+            <fieldset>
+                <legend>payments details</legend>
+                <dl>
+                    <dt>name:</dt>
+                    <dd><input type="text" name="text name" value="mallikarjuna" read only></dd>
+                    <dt>card number:</dt>
+                    <dd><input type="text" name="text card number" minlength="16" maxlength="16" required place holder="card number 16 char only" disabled></dd>
+                    <dt>expiry year:</dt>
+                    <dd><input type="text" name="text year" size="4" minlength="2" maxlength="4" required placeholder="4 char" autofocus></dd>
+                    <dt>cvv number:</dt>
+                    <dd><input type="text" name="text cvv" size="3" minlength="3" maxlength="3" required placeholder="3 char"></dd>
+                </dl>
+                <button>submit</button>
+            </fieldset>
+        </fome>
+        </table>
+    </body>
+</html>

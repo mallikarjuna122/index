@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <title>news paper</title>
+    <style>
+       body{
+           width:90%;
+           max-width: 900px;
+           margin: 2em auto;
+           font:0.6em arial;
+       }
+       .container{
+           display:grid;
+           grid-template-columns: 1fr 3fr;
+           grid-gap:20px;
+       }
+       header,footer{
+           border-radius: 4px;
+           border:2px sandybrown;
+           background-color: lightgreen;
+           color: red;
+           padding: 10px;
+           text-align: center;
+       }
+       header{
+           grid-column: 1/3;
+           grid-row: 1;
+       }
+       footer{
+           grid-column: 1/3;
+           grid-row: 1;
+       }
+       article{
+           grid-column: 2;
+           grid-row: 2; 
+           column-count: 3;
+           column-gap: 20px;
+           column-rule:2px dashed darkcyan;
+       }
+       aside{
+           grid-column: 1;
+           grid-row: 2;
+           border-right: 4px solid darkcyan;
+       }
+       .updates{
+           background-color: darkgoldenrod;
+           color: darkgreen;
+           text-align: center;
+           column-span:all;
+       }
+    </style>
+    <body>
+        <div class="cotainer">
+          <header> <h1>enadu news paper</h1></header>
+          <article>
+              <h2>news in state</h2>
+              <img src ="../images/ear bud.jpg">
+              <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p>
+              <p>>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p>
+              <h2 class="updates">news updates</h2>
+              <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p>
+
+          </article>
+            <aside>
+              <h2>head lines</h2>
+              
+                <i><p> a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p></i>
+          </aside>
+          <footer>
+              <div>
+                  <i>published from telugu states</i>
+              </div>
+              <div>
+                  &copy;copyright 2020
+              </div>
+          </footer>
+        </div>
+    </body>
+</html>

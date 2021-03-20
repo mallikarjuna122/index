@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script type="text/javascript">
+         function Addpicture(){
+             var pic= new Image();
+             pic.width=200;
+             pic.height=200;
+             pic .src="../images/shoes.jpg";
+             pic.border=1;
+             document.getElementById("container").appendChild(pic);
+         }
+      </script>
+    </head>
+    <body>
+        <button onclick="Addpicture()">add picture</button>
+        <div id="container" style="margin-top: 20px;"></div>
+    </body>
+</html>

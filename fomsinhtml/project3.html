@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>application</title>
+    </head>
+    <style>
+        h1{
+            background-color: goldenrod;
+            color: indigo;
+        }
+        fieldset{
+            background-color:greenyellow;
+            color: crimson;
+            font-size: 20px;
+        }
+        legend{
+            background-color: darkorange;
+            color: cornsilk;
+            font-size: 25px;
+        }
+    </style>
+    <body>
+        <form>
+            <h1 align="center">Job application</h1>
+            <fieldset>
+                <legend>Job imformation</legend>
+                    Job of interest:
+                    <select name="interest" value="select" place holder="text">
+                        <option value="UI">UI developer</option>
+                        <option value="java">java developer</option>
+                        <option>python developer</option>
+                        <option>orcle developer</option>
+                        <option>servies now</option>
+                        <option>angular</option>
+                        <option>hadoop</option>
+                    </select>
+                    <div>
+                    Referral Source        :
+                    <select name="Referral">
+                        <option value="UI">UI developer</option>
+                        <option>servies now</option>
+                        <option>angular</option>
+                        <option>hadoop</option>
+                    </select>
+                    </div>
+                    <div>
+                        Availability:
+                        <select>
+                            <option value="UI">UI developer</option>
+                            <option value="java">java developer</option>
+                            <option>python developer</option>
+                            <option>orcle developer</option>
+                            <option>servies now</option>
+                            <option>angular</option>
+                        </select>
+                    </div>
+                    <div>
+                        Location:
+                        <select>
+                            <option>bangulur</option>
+                            <option>hyd</option>
+                            <option>chennai</option>
+                            <option>punnai</option>
+                        </select>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <dl>
+                    <dt>First name:</dt>
+                    <dd><input type="text" name="txtname"></dd>
+                    <dt>Last name:</dt>
+                    <dd><input type="text" name="txtname"></dd>
+                    <dt>Street Addres:</dt>
+                    <dd><input type="text" name="txtname"></dd> 
+                    <dt>City:</dt>
+                    <dd><input type="text" name="txtname"></dd>
+                    <dt>State:</dt>
+                    <dd><input type="text" name="txtname"></dd>
+                    <dt>Postal code:</dt>
+                    <dd><input type="text" name="txtcode"  placeholder="xxxxxx"></dd>
+                    <dt>Telephone Number:</dt>
+                    <dd><input patttern="\+91[0-9]{10}" type="text" name="txtname" placeholder="+91[10 digits]"></dd>
+                    <dt>Email Address:</dt>
+                    <dd><input pattern="(?=.*[A-Z])\w{4,15}" type="password" name="txtpwd" placeholder="4 to 15 chars"></dd>
+                    <dt>Have you ever been convicted of a felony?:</dt>
+                    <dd>
+                        <input type="radio" value="yes">yes
+                        <input type="radio" value="no">no
+                    </dd>
+                    <dt>Are you willingto relocate?:</dt>
+                    <dd>
+                        <input type="radio" value="yes">yes
+                        <input type="radio" value="no">no
+                    </dd>
+                </dl>
+            </fieldset>
+            <fieldset>
+                <legend>Emploment History</legend>
+                <p>Provide your employemnt history starting with the compenyfor which you have most recently worked</p>
+                <fieldset>
+                    <legend>Compeny 1</legend>
+                    <dl>
+                        <dt>Compeny Name:</dt>
+                        <dd> <input tye="text" name="txtname"></dd>
+                        <dt>Job Title:</dt>
+                        <dd><input type="text" name="txtname"></dd>
+                    </dl>
+                </fieldset>
+            </fieldset>
+        </form>
+    </body>
+</html>

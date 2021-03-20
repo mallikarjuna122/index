@@ -1,0 +1,52 @@
+
+    <head>
+     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+     <link rel="stylesheet" href="../fonts/css/all.css">
+     <script type="text/javascript">
+     var products=[{name:"samsung tv",price:45000.00,photo:"../tv.jpg"},{name:"ear bud",price:4500.00,photo:"../images/ear bud.jpg"},{name:"shirt",price:2500.00,photo:"../images/shirt.jpg"},{name:"shoes",price:5500.00,photo:"../images/shoes.jpg"}];
+     function getdetails(index){
+         document.getElementById("prod name").innerHTML=products[index].name;
+         document.getElementById("prod price").innerHTML="&#8377;"+products[index].price;
+         document.getElementById("pic").src=products[index].photo;
+     }
+     function changeimage(){
+         var slidervalue=document.getElementById("slider").value;
+         getdetails(slidervalue);
+     }
+     function bodyload(){
+         getdetails(0);
+     }
+     var count=0;
+     function previousclick(){
+         count--;
+         getdetails(count);
+         document.getElementById("slider").value=count;
+     }
+     function nextclick(){
+         count++;
+         getdetails(count);
+         document.getElementById("slider").value.count;
+     }
+     </script>
+    </head>
+    <body class="container-fluid" onload="bodyload()">
+       <div class="card">
+           <div class="card-header text-center">
+               <h2>amazon products</h2>
+           </div>
+           <div class="card-body text-center">
+               <button onclick="previousclick()" class="btn btn-outline-primary">
+                <span class="fa fa-chevron-circle-left"></span>
+            </button>
+            <h2 id="prod name"></h2>
+            <img id="pic" width="400" height="300">
+            <h3 id="prod price"></h3>
+            <button onclick="nextclick()" class="btn btn-outline-primary">
+                <span class="fa fa-chevron-circle-right"></span>
+            </button>
+           </div>
+           <div class="card-footer text-center">
+               <input onchange="changeimage()" type="range" min="0" max="4" value="0" id="slider">
+           </div>
+       </div>
+    </body>

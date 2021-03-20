@@ -1,0 +1,21 @@
+<script>
+    function f1(){
+     var products=["mallikarjuna","swami","obul","sathi","naveen"];
+     function printlist(){
+         document.write(`products=${products.toString()}<br>`);
+     }
+     printlist();
+     document.write(`${products.shift()}removed<br>`);
+     printlist();
+    }
+    f1();
+</script>
+<script>
+    function f1(){
+      var products=["a","g","s","j","b","c"];
+      products.sort();
+      products.reverse();
+      document.write(products.toString());
+    }
+    f1();
+</script>

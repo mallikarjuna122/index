@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form in html</title>
+        <style>
+            fieldset{
+                width: 300px;
+                margin: 10px;
+                padding: 10px;
+                border: sandybrown;
+            }
+            div{
+                margin:10px;
+                padding:10px;
+            }
+            legend{
+              background-color: red;
+              color: blue;  
+            }
+            h2{
+                background-color: seagreen;
+                color: seashell;
+            }
+            ol{
+                background-attachment:red;
+            }
+        </style>
+    </head>
+    <body >
+        <form>
+            <fieldset>
+                <legend>imfome bio datafome</legend>
+            <table width="100%" border="2" cellspacing="10" cellpadding="10" frame="all">
+                <td>
+            <h2>bio data form</h2>
+            <div>
+            <ol>
+                  <li>first name:
+                     <input type="text" id="name" valid></li>
+                  <li>last name:
+                      <input type="text" id="name"></li>
+                  <li>age:
+                      <input type="number" id="number">
+                  </li>
+                  <li>gender:
+                      <input type="text" id="name">
+                  </li>
+                  <li>date of birth:
+                       <input type="number" id="number">
+                  </li>
+                </div>
+                  <div>
+                      <li>region:
+                          <input type="text" id="name">
+                      </li>
+                      <li>address:
+                          <input type="text" id="name">
+                      </li>
+                    </ol>
+                  </div>
+                  <div>
+                      <ol>
+                      <li>fav color:
+                          <input type="color" id="color">
+                      </li>
+                      <li>e-mail:
+                          <input type="e-mail" id="e-mail">
+                      </li>
+                      <li>password:
+                          <input pattern="(?=.*[A-Z])\w{4,15}" type="password" name="txt pwd" placeholder="4to15 chars at least 1upper case">
+                      </li>
+                      <li>phone number:
+                          <input pettern="\+91[0-9]{10}" type="number" name="txt mobile" place holder="+91[10 digits]">
+                      </li>
+                      <li>photo:
+                          <input type="file" id="file">
+                      </li>
+                        <li>resume:
+                            <input type="file" id="file">
+                        </li>
+                        <li>web site:
+                            <input type="url">
+                        </li>
+                        </div>
+                        <div>
+                            <li>
+                        <button>submit</button></li>
+                  </div>
+            </ol>
+        </td>
+            </table>
+        </fieldset>
+        </form>
+    </body>
+</html>

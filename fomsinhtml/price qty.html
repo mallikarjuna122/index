@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <had><title>price and qty</title></had>
+    <style>
+        dt{
+            font-weight: bold;
+            background-color:lightgray;
+        }
+        dd{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <body>
+        <form input="total.parsent(qty.value)*parcefloat(price.value)">
+        <fieldset>
+            <legend>product and sale</legend>
+            <dl>
+                <dt>name</dt>
+                <dd>redmi</dd>
+                <dt>price</dt>
+                <dd><input type="text" id="price"></dd>
+                <dt>quantity</dt>
+                <dd><input type="number" value="1" id="qty"></dd>
+                <dt>total</dt>
+                <dd><output name="total" for="price qty"></output></dd>
+            </dl>
+        </fieldset>
+        </form>
+    </body>
+</html>

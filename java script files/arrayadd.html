@@ -1,0 +1,16 @@
+<script>
+    function f1(){
+     var product=["tv","mobile","shoe"];
+     function printlist(){
+         document.write(`product=${product.toString()}<br>`);
+     }
+     printlist();
+     product.push("watch","sunglass");
+     printlist();
+     product.unshift("laptop");
+     printlist();
+     product.splice(3,0,"bag");
+     printlist();
+    }
+    f1();
+</script>

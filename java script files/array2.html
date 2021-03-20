@@ -1,0 +1,18 @@
+<script>
+    function f1(){
+     var sales=[12000,40000,35000,2000,6000];
+     document.write(`${sales.find(function(val){
+         return val>=30000;
+     })}`);
+    }
+    f1();
+</script><br>
+<script>
+    function f1(){
+     var sales=[12000,40000,35000,2000,6000];
+     document.write(`${sales.filter(function(val){
+         return val<=30000;
+     })}`);
+    }
+    f1();
+</script>
